@@ -260,7 +260,7 @@ class WorkflowStep extends Component<Props, State> {
             this.setState({ hiddenConfirm: false });
           }}
           title={this.renderStepItemTitle(item)}
-          content={this.renderContent(recordItem, item, index == currentStep)}
+          content={this.renderContent(recordItem, item, index == currentStep - 1)}
         />
       ));
       const changeStepClassName = this.changeFirstClassName(steps);
